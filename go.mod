@@ -3,6 +3,7 @@ module github.com/k8sgpt-ai/k8sgpt
 go 1.20
 
 require (
+	git.woa.com/ianvs/ianvs-sdk v1.0.2
 	github.com/aquasecurity/trivy-operator v0.16.4
 	github.com/fatih/color v1.16.0
 	github.com/magiconair/properties v1.8.7
@@ -17,8 +18,7 @@ require (
 	k8s.io/api v0.28.4
 	k8s.io/apimachinery v0.28.4
 	k8s.io/client-go v0.28.4
-	k8s.io/kubectl v0.28.4
-
+	k8s.io/kubectl v0.28.4 // indirect
 )
 
 require github.com/adrg/xdg v0.4.0
@@ -32,9 +32,9 @@ require (
 	github.com/aws/aws-sdk-go v1.48.3
 	github.com/cohere-ai/cohere-go v0.2.0
 	github.com/olekukonko/tablewriter v0.0.5
+	google.golang.org/api v0.151.0
 	sigs.k8s.io/controller-runtime v0.16.3
 	sigs.k8s.io/gateway-api v1.0.0
-	google.golang.org/api v0.151.0
 )
 
 require (
@@ -170,7 +170,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/samber/lo v1.38.1 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
-	github.com/sirupsen/logrus v1.9.3 // indirect
+	github.com/sirupsen/logrus v1.9.3
 	github.com/spdx/tools-golang v0.5.0 // indirect
 	github.com/spf13/afero v1.10.0 // indirect
 	github.com/spf13/cast v1.5.1 // indirect
@@ -201,7 +201,7 @@ require (
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiextensions-apiserver v0.28.3 // indirect
+	k8s.io/apiextensions-apiserver v0.28.3
 	k8s.io/apiserver v0.28.3 // indirect
 	k8s.io/cli-runtime v0.28.4 // indirect
 	k8s.io/component-base v0.28.4 // indirect

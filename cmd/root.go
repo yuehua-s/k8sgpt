@@ -38,6 +38,7 @@ var (
 	Version     string
 	Commit      string
 	Date        string
+	clusterid   string
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -77,6 +78,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", fmt.Sprintf("Default config file (%s/k8sgpt/k8sgpt.yaml)", xdg.ConfigHome))
 	rootCmd.PersistentFlags().StringVar(&kubecontext, "kubecontext", "", "Kubernetes context to use. Only required if out-of-cluster.")
 	rootCmd.PersistentFlags().StringVar(&kubeconfig, "kubeconfig", "", "Path to a kubeconfig. Only required if out-of-cluster.")
+	rootCmd.PersistentFlags().StringVar(&clusterid, "clusterid", "", "The cluster id you want to analysis.")
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -97,6 +99,7 @@ func initConfig() {
 
 	viper.Set("kubecontext", kubecontext)
 	viper.Set("kubeconfig", kubeconfig)
+	viper.Set("clusterid", clusterid)
 
 	viper.SetEnvPrefix("K8SGPT")
 	viper.AutomaticEnv() // read in environment variables that match

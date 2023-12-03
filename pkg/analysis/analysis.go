@@ -17,6 +17,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/k8sgpt-ai/k8sgpt/pkg/ianvs"
 	"os"
 	"reflect"
 	"strings"
@@ -108,7 +109,12 @@ func NewAnalysis(backend string, language string, filters []string, namespace st
 
 	kubecontext := viper.GetString("kubecontext")
 	kubeconfig := viper.GetString("kubeconfig")
+	clusterid := viper.GetString("clusterid")
+
 	client, err := kubernetes.NewClient(kubecontext, kubeconfig)
+	clientIanvs, err := ianvs.GetClusterClient(clusterid)
+	client.Client = clientIanvs
+
 	if err != nil {
 		color.Red("Error initialising kubernetes client: %v", err)
 		return nil, err
