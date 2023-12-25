@@ -9,6 +9,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/k8sgpt-ai/k8sgpt)
 [![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7272/badge)](https://bestpractices.coreinfrastructure.org/projects/7272)
 [![Link to documentation](https://img.shields.io/static/v1?label=%F0%9F%93%96&message=Documentation&color=blue)](https://docs.k8sgpt.ai/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fk8sgpt-ai%2Fk8sgpt.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fk8sgpt-ai%2Fk8sgpt?ref=badge_shield)
 
 `k8sgpt` is a tool for scanning your Kubernetes clusters, diagnosing, and triaging issues in simple English.
 
@@ -36,7 +37,7 @@ brew install k8sgpt
   **32 bit:**
   <!---x-release-please-start-version-->
   ```
-  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.23/k8sgpt_386.rpm
+  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.24/k8sgpt_386.rpm
   sudo rpm -ivh k8sgpt_386.rpm
   ```
   <!---x-release-please-end-->
@@ -45,7 +46,7 @@ brew install k8sgpt
 
   <!---x-release-please-start-version-->
   ```
-  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.23/k8sgpt_amd64.rpm
+  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.24/k8sgpt_amd64.rpm
   sudo rpm -ivh -i k8sgpt_amd64.rpm
   ```
   <!---x-release-please-end-->
@@ -57,7 +58,7 @@ brew install k8sgpt
   **32 bit:**
   <!---x-release-please-start-version-->
   ```
-  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.23/k8sgpt_386.deb
+  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.24/k8sgpt_386.deb
   sudo dpkg -i k8sgpt_386.deb
   ```
   <!---x-release-please-end-->
@@ -65,7 +66,7 @@ brew install k8sgpt
 
   <!---x-release-please-start-version-->
   ```
-  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.23/k8sgpt_amd64.deb
+  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.24/k8sgpt_amd64.deb
   sudo dpkg -i k8sgpt_amd64.deb
   ```
   <!---x-release-please-end-->
@@ -78,14 +79,14 @@ brew install k8sgpt
   **32 bit:**
   <!---x-release-please-start-version-->
   ```
-  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.23/k8sgpt_386.apk
+  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.24/k8sgpt_386.apk
   apk add k8sgpt_386.apk
   ```
   <!---x-release-please-end-->
   **64 bit:**
   <!---x-release-please-start-version-->
   ```
-  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.23/k8sgpt_amd64.apk
+  curl -LO https://github.com/k8sgpt-ai/k8sgpt/releases/download/v0.3.24/k8sgpt_amd64.apk
   apk add k8sgpt_amd64.apk
   ```
   <!---x-release-please-end-->x
@@ -643,3 +644,7 @@ Find us on [Slack](https://join.slack.com/t/k8sgpt/shared_invite/zt-276pa9uyq-px
 <a href="https://github.com/k8sgpt-ai/k8sgpt/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=k8sgpt-ai/k8sgpt" />
 </a>
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fk8sgpt-ai%2Fk8sgpt.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fk8sgpt-ai%2Fk8sgpt?ref=badge_large)
