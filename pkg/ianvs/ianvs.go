@@ -11,8 +11,8 @@ import (
 func GetClusterClient(clsid string) (*kubernetes.Clientset, error) {
 	ianvsClient := ianvsclient.NewClient(
 		"ianvs-for-cls.tke.woa.com",
-		"1b09517f2a20bffe4df296858fa66cd4",
-		"eb9dec621c31f1e9cba741f8a9624d41",
+		"9c50924be5333464c2b50cc08d915bc2",
+		"9b1d669726c4bd6d76e7ae50213db254",
 	)
 
 	restConfig, err := ianvsClient.GetClientConfig("yuehuazhang", clsid)
